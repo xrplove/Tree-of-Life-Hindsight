@@ -88,7 +88,7 @@ dependencies = [
     "winloop>=0.1.0; sys_platform == 'win32'",
     "uvloop>=0.22.1; sys_platform != 'win32'",
     # Transitive dependency security fixes
-    "pyasn1>=0.6.3", # DoS vulnerability fix
+    "pyasn1>=0.6.5", # DoS vulnerability fix
     "urllib3>=2.7.0", # Decompression-bomb safeguards bypass + sensitive header forwarding fixes
     "protobuf>=7.35.1", # JSON recursion depth bypass fix (>=6.33.5); requires otel>=1.44 (proto <1.44 caps protobuf<7.0)
     "pillow>=12.3.0", # Multiple HIGH image parsing vulnerabilities fixed in 12.3.0
