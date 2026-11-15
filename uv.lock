@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -27,6 +27,9 @@ members = [
     "hindsight-embed",
 ]
 constraints = [{ name = "onnxruntime", marker = "sys_platform != 'win32'", specifier = ">=1.24.1" }]
+
+[manifest.dependency-groups]
+dev = []
 
 [[package]]
 name = "aiofile"
@@ -1836,7 +1839,7 @@ requires-dist = [
     { name = "pillow", specifier = ">=12.3.0" },
     { name = "protobuf", specifier = ">=7.35.1" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
-    { name = "pyasn1", specifier = ">=0.6.3" },
+    { name = "pyasn1", specifier = ">=0.6.5" },
     { name = "pydantic", specifier = ">=2.0.0" },
     { name = "pygments", specifier = ">=2.20.0" },
     { name = "pyjwt", specifier = ">=2.12.0" },
